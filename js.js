@@ -1,7 +1,7 @@
 var list = [
     "burritos",
-    "banna",
-    "asdf",
+    "banana",
+    "thirdthingy",
 ];
 
 
@@ -11,4 +11,4 @@ for(let i=0; i < list.length; i++){
     alert(list[i]);
 }
 
-//This is an edit
+//I'm gonna save my changes
