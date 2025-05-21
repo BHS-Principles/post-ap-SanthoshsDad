@@ -5,11 +5,17 @@ var list = [
 ];
 
 var BTN = document.getElementById("myButton");
+var doThings = function(event){
+    alert("I'm not copying that :skull:");
+    console.log(event);
+};
 
 for(var i=0; i < 3; i++){
     var newBTN = BTN.cloneNode(true);
+    newBTN.innerHTML = list[i];
     document.body.append(newBTN);
-    alert("whatever" + list[i]);
+
+    newBTN.addEventListener("click", doThings);
+
 }
 
-//I'm gonna save my changes
