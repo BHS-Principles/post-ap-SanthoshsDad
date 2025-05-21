@@ -4,11 +4,12 @@ var list = [
     "thirdthingy",
 ];
 
+var BTN = document.getElementById("myButton");
 
-
-for(let i=0; i < list.length; i++){
-
-    alert(list[i]);
+for(var i=0; i < 3; i++){
+    var newBTN = BTN.cloneNode(true);
+    document.body.append(newBTN);
+    alert("whatever" + list[i]);
 }
 
 //I'm gonna save my changes
